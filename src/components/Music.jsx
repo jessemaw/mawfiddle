@@ -2,6 +2,9 @@ import React from "react";
 import Card from "../UI/Card";
 import classes from "./Music.module.css";
 import MusicItem from "./MusicItem";
+import JesseMainImg from "../assets/Images/maw-fiddle-blurb-img.jpg";
+import WolfPupImg from "../assets/Images/wolf-pup-band-photo-square.jpg";
+import XenFiddleImg from "../assets/Images/jessemaw-pianosingle-coverart-alt5.jpg";
 
 function Music(props) {
 
@@ -11,7 +14,7 @@ function Music(props) {
       <div className={classes.container}>
         <MusicItem
           musicLink="https://youtube.com/playlist?list=PLYVnblqpMUngToq3GrMtyguCWs3yyenRO"
-          topImg="images/maw-fiddle-blurb-img.jpg"
+          topImg={JesseMainImg}
           topTitle="MAW FIDDLE"
           topGenre="PROGRESSIVE FIDDLING"
           topDescription="Classic and new fiddle tunes with original arrangements, full of modern, progressive ideas and exploratory improvisation"
@@ -29,7 +32,7 @@ function Music(props) {
       <div className={classes.container}>
         <MusicItem
           musicLink="https://wolfpupstringband.bandcamp.com/"
-          topImg="images/wolf-pup-band-photo-square.jpg"
+          topImg={WolfPupImg}
           topTitle="WOLF PUP"
           topGenre="STRING BAND"
           topDescription="Modern traditional stringband from the Blue Ridge mountains of Southern Virginia"
@@ -40,7 +43,7 @@ function Music(props) {
           topTitle="XEN FIDDLE"
           topGenre="EXPERIMENTAL FIDDLING"
           topDescription="Collaboration with Harmonicity. Fiddling with the Harmonic Series, an infinite series of music notes"
-          topImg="images/jessemaw-pianosingle-coverart-alt5.jpg"
+          topImg={XenFiddleImg}
           label="Xen-Fiddle"
         />
       </div>

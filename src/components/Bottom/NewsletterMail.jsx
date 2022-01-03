@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Card from "../../UI/Card";
 import classes from "./NewsletterMail.module.css";
+import FiddleLogo from "../../assets/Images/maw-fiddle-logo.png";
 
 function NewsletterMail({ status, message, onValidated }) {
   const [enteredEmail, setEnteredEmail] = useState("");
@@ -44,7 +45,7 @@ function NewsletterMail({ status, message, onValidated }) {
           <div className={classes.logoContainer}>
             <img
               className={classes.logo}
-              src="images/Maw%20fiddle%20logo.png"
+              src={FiddleLogo}
               alt="maw-fiddle"
             />
           </div>

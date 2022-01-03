@@ -1,5 +1,6 @@
 import React from "react";
 import classes from "./Blurb.module.css";
+import JesseMainImg from "../assets/Images/maw-fiddle-blurb-img.jpg";
 
 function Blurb() {
   return (
@@ -7,7 +8,7 @@ function Blurb() {
      <div className={classes.image}>
       <img
         className="blurb-img"
-        src="/images/maw-fiddle-blurb-img.jpg"
+        src={JesseMainImg}
         alt="maw-fiddle"
       />
     </div>
