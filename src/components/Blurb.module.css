@@ -1,0 +1,44 @@
+.blurb-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 2rem;
+}
+
+.image {
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.image img {
+    border-radius: 50%;
+    align-self: flex-start;
+    max-width: 90%;
+}
+
+.blurb-txt {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+}
+
+.heading {
+    font-family: Futura;
+    font-weight: bold;
+    color: #49484D;
+    font-size: 4.5rem;
+    padding-top: 24px;
+    margin-bottom: 0;
+}
+
+.paragraph {
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: #49484D;
+    line-height: 40px;
+    font-size: 20px;
+    margin-right: 50px;
+}

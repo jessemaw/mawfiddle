@@ -1,0 +1,57 @@
+.container {
+    display: flex;
+    justify-content: right;
+    white-space: normal;
+    align-items: center;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    background-color: white;
+  }
+
+.rightSide {
+    display: flex;
+    max-width: 50%;
+    flex-direction: column;
+    align-items: left;
+}
+
+.testimonial {
+    border-radius: 50%;
+    max-width: 400px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #49484D;
+    font-style: italic; 
+    position: absolute;
+    right: 700px;
+    line-height: 30px;
+}
+
+.name {
+    display: flex;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #49484D;
+    font-style: italic; 
+    line-height: 30px;
+}
+
+.heading {
+    font-family: Futura;
+    font-weight: bold;
+    color: #49484D;
+    font-size: 4.5rem;
+    margin-bottom: 0;
+}
+
+.instructionText {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: #49484D;
+    margin-right: 7%;
+    font-size: 1.2rem;
+    line-height: 30px;
+}
+
+.instButton {
+    margin-bottom: 2rem;
+}

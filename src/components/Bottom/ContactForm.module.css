@@ -1,0 +1,146 @@
+.bigBox {
+  display: flex;
+  background-color: transparent;
+  border-style: none;
+  border-radius: 0;
+  box-shadow: none;
+  justify-content: center;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  max-width: 100%;
+  height: auto;
+  align-items: center;
+  
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  white-space: normal;
+}
+
+.newsletter {
+  display: block;
+  height: 90%;
+  width: 50%;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 2rem;
+  justify-content: center;
+  text-align: center;
+  border-radius: 12px;
+}
+
+
+.box {
+  width: 75%;
+  height: 424px;
+  margin-bottom: 2rem;
+  background-color: white;
+  border: solid thin #D00D28;
+  border-radius: 12px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 1em;
+  color: inherit;
+
+}
+
+.heading {
+  font-family: Futura;
+  font-weight: bold;
+  color: #49484d;
+  font-size: 4.5rem;
+  margin: 0 auto;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.email {
+  width: 15rem;
+  height: 1.5rem;
+  border-radius: 4px;
+  border-color: #D1D1D2;
+  border-width: thin;
+  border-style: solid;
+  margin-top: 1.5rem;
+}
+
+.email::placeholder {
+    color: #D1D1D2;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.email:focus {
+  outline: none;
+}
+
+.email.invalid {
+  border-color: red;
+  background: #fbdada;
+}
+
+.emailText {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  color: #49484d;
+  margin-top: 1rem;
+}
+
+.logo {
+  max-width: 50%;
+
+}
+
+.logoContainer {
+  text-align: center;
+  margin-bottom: 0;
+} 
+
+.signUp {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex-direction: row;
+  font-size: 18px;
+  height: 32px;
+  width: 160px;
+  margin-top: 2rem;
+}
+
+.message {
+  margin-top: 2rem;
+  border-radius: 4px;
+  border-style: solid;
+  border-color: #D1D1D2;
+  resize: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.message:focus {
+  outline: none;
+}
+
+.message::placeholder {
+  color: #D1D1D2;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.message.invalid {
+  border-color: red;
+  background: #fbdada;
+}
+
+.signUp:disabled,
+.signUp:focus:disabled,
+.signUp:hover:disabled,
+.signUp:active:disabled {
+background: #ccc;
+border-color: #ccc;
+color: #666666;
+cursor: not-allowed;
+}

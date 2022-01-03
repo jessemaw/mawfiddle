@@ -1,0 +1,10 @@
+.footerContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.footerText {
+    display: flex;
+    font-family: Verdana;
+    color: #D1D1D2;
+}
