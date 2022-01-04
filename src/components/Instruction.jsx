@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { useTransition, animated, config } from "react-spring";
 import useInterval from "use-interval";
 import classes from "./Instruction.module.css";

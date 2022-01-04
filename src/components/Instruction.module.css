@@ -1,6 +1,8 @@
 .container {
     display: flex;
-    justify-content: right;
+    display: -webkit-flex;
+    -webkit-justify-content: right;
+    justify-content: flex-end;
     white-space: normal;
     align-items: center;
     margin-left: 1.5rem;
@@ -9,10 +11,13 @@
   }
 
 .rightSide {
+    display: -webkit-flex;
     display: flex;
     max-width: 50%;
+    justify-content: right;
     flex-direction: column;
-    align-items: left;
+    -webkit-flex-direction: column;
+    
 }
 
 .testimonial {
@@ -22,7 +27,7 @@
     color: #49484D;
     font-style: italic; 
     position: absolute;
-    right: 700px;
+    right: 750px;
     line-height: 30px;
 }
 
@@ -44,6 +49,7 @@
 }
 
 .instructionText {
+    display: flex;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     color: #49484D;
