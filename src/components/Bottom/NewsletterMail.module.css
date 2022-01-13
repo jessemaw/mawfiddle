@@ -50,23 +50,19 @@
 }
   
   .heading {
-    font-family: Futura;
-    font-weight: bold;
-    color: #49484d;
-    font-size: 4.5rem;
     margin: 0 auto;
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
 
   .email {
-    width: 15rem;
+    width: 50%;
     height: 1.5rem;
     border-radius: 4px;
     border-color: #D1D1D2;
     border-width: thin;
     border-style: solid;
-    margin-top: 1.5rem;
+    margin-top: 5%;
   }
 
   .email::placeholder {
@@ -87,7 +83,8 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     color: #49484d;
-    margin-top: 1rem;
+    font-size: 2vw;
+    margin-top: 3%;
   }
 
   .logo {
@@ -109,20 +106,8 @@
     font-size: 18px;
     height: 32px;
     width: 160px;
-    margin-top: 2rem;
-}
-
-.message {
-    margin-top: 2rem;
-    border-radius: 4px;
-    border-style: solid;
-    border-color: #D1D1D2;
-    resize: none;
-}
-
-.message::placeholder {
-    color: #D1D1D2;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 6%;
+    line-height: 0;
 }
 
 .signUp:disabled,
@@ -133,4 +118,43 @@
   border-color: #ccc;
   color: #666666;
   cursor: not-allowed;
+}
+
+@media screen and (max-width: 768px) {
+  .newsletter {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .box {
+    width: 80%;
+    height: 100%;
+  }
+
+  .email {
+    width: 75%;
+  }
+
+  .emailText {
+    font-size: 4vw;
+    line-height: 6vh;
+  }
+
+  .logoContainer {
+    margin-top: 8%;
+  }
+
+  .signUp {
+    margin-bottom: 2%;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .email {
+    margin-top: 1vw;
+  }
+  .emailText {
+    font-size: 24px;
+  }
 }

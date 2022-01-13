@@ -6,7 +6,7 @@
 }
 
 .image {
-    max-width: 50%;
+    width: 50%;
     display: flex;
     justify-content: center;
     padding-top: 30px;
@@ -15,20 +15,16 @@
 .image img {
     border-radius: 50%;
     align-self: flex-start;
-    max-width: 90%;
+    width: 90%;
 }
 
 .blurb-txt {
     display: flex;
     flex-direction: column;
-    max-width: 50%;
+    width: 50%;
 }
 
 .heading {
-    font-family: Futura;
-    font-weight: bold;
-    color: #49484D;
-    font-size: 4.5rem;
     padding-top: 24px;
     margin-bottom: 0;
 }
@@ -38,7 +34,93 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     color: #49484D;
-    line-height: 40px;
-    font-size: 20px;
+    line-height: 7vh;
+    font-size: 1.7vw;
     margin-right: 50px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .blurb-container {
+        display: block;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .heading {
+        text-align: center;
+    }
+
+    .blurb-txt {
+       text-align: center;
+       width: 100%;
+    }
+
+    .paragraph {
+        margin-right: 5%;
+        margin-left: 5%;
+        font-size: 3vw;
+    }
+    .image {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .image img {
+        border-radius: 12px;
+        align-self: auto;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .blurb-container {
+        display: block;
+        margin: 0;
+        text-align: center;
+    }
+    .blurb-txt {
+        text-align: center;
+        width: 100%;
+     }
+ 
+     .paragraph {
+         margin-right: 5%;
+         margin-left: 5%;
+         font-size: 4vw;
+         line-height: 8vw;
+     }
+     .image {
+         position: relative;
+         width: 100%;
+         height: 100%;
+         padding-left: 0;
+         padding-right: 0;
+         padding-top: 0;
+     }
+ 
+     .image img {
+         border-radius: 12px;
+         align-self: auto;
+         width: 100%;
+         height: 100%;
+     }
+    .firstName {
+        color: white;
+        position: absolute;
+        top: 16px;
+        right: 24px;
+        font-size: 16vw;
+        margin: 0;
+    }
+
+    .lastName {
+        color: white;
+        position: absolute;
+        bottom: 8px;
+        right: 24px;
+        font-size: 16vw;
+        margin: 0;
+    }
 }

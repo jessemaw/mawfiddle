@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useTransition, animated, config } from "react-spring";
 import useInterval from "use-interval";
+import { useMediaQuery } from "react-responsive";
 import classes from "./Instruction.module.css";
 import Card from "../UI/Card";
 import Button from "../UI/Button";
@@ -8,6 +9,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPatreon } from "@fortawesome/free-brands-svg-icons";
 
 function Instruction() {
+  const isLargeDevice = useMediaQuery({query: "(min-width: 768px)"});
   const testimonials = [
     {
       title:
@@ -28,7 +30,7 @@ function Instruction() {
 
   const increment = () =>
     setIndex((state) => (state + 1) % testimonials.length);
-  useInterval(increment, 9000);
+  useInterval(increment, 11000);
 
   const transitions = useTransition(item, {
     from: { opacity: 0 },
@@ -40,13 +42,16 @@ function Instruction() {
   });
 
   return (
-    <Card className={classes.container}>
-      {transitions(({opacity}, item) => (
+    <Card id="instruction" className={classes.container}>
+
+     {isLargeDevice && <React.Fragment>
+     {transitions(({opacity}, item) => (
         <animated.div key={item.id} className={classes.testimonial} style={{opacity}}>
           <p className={classes.name}>{item.title}</p>
           <p className={classes.name}>{item.student}</p>
         </animated.div>
       ))}
+      </React.Fragment>}
       <div className={classes.rightSide}>
         <h1 className={classes.heading}>INSTRUCTION</h1>
         <p className={classes.instructionText}>

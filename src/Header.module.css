@@ -1,33 +1,48 @@
+.headerContainer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .logo {
+        
         display: flex;
-        max-width: 30%;
+        width: 100%;
         height: auto;
-        margin-bottom: 2rem;
+        margin-bottom: 10%;
+        align-items: center;
     
   
 }
 
 .logo-container {
-    margin-top: 3rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 30%;
+    margin-top: 5%;
 }
 
 .icons {
-    position: absolute;
-    left: 300px;
-    top: 88px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    flex: 1;
+}
+
+.hamburger {
+    display: flex;
+    flex: 1;
 }
 
 .facebook {
+    display: flex;
     color: #426782;
-    margin-right: 1rem;
+    margin-right: 3vw;
 }
 
 .youtube {
+    display: flex;
     color: red;
-    margin-right: 1rem;
+    margin-right: 3vw;
 }
 
 .patreon {
@@ -45,7 +60,7 @@
 }
 
 .menu li {
-    margin-right: 4rem;
+    margin-right: 7%;
 }
 
 .pages:visited {
@@ -71,4 +86,42 @@
     left: 428px;
     top: 181px;
     transform: scaleX(-1);
+}
+
+@media screen and (max-width: 768px) {
+    .headerContainer {
+        justify-content: center;
+    }
+
+    .icons {
+        visibility: hidden;
+    }
+   .logo-container {
+       width: 50%;
+   }
+}
+
+@media screen and (max-width: 576px) {
+    .hamburger {
+        justify-content: flex-end;
+        align-items: center;
+
+    }
+
+      /* Rotate first bar */
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px) ;
+    transform: rotate(-45deg) translate(-6px, 6px) ;
+  }
+  
+  /* Fade out the second bar */
+  .change .bar2 {
+    opacity: 0;
+  }
+  
+  /* Rotate last bar */
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-5px, -8px) ;
+    transform: rotate(45deg) translate(-5px, -8px) ;
+  }
 }

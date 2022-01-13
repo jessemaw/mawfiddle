@@ -2,6 +2,17 @@ body {
     background-color: #FDF7EE;
 }
 
+div {
+    -webkit-marquee-increment: 0vw;
+}
+
+h1 {
+  font-family: Futura;
+  font-weight: bold;
+  color: #49484d;
+  font-size: 6vw;
+}
+
 a {
     text-decoration: none;
 }
@@ -18,10 +29,25 @@ a:hover {
     color: lightslategrey;
 }
 
-
-
 a:active {
     color: none;
+}
+
+.my-node-enter, .my-node-enter-appear {
+    opacity: 0;
+  }
+  .my-node-enter-active, .my-node-appear-active {
+    opacity: 1;
+    transition: all ease 500ms;
+  }
+
+
+@media screen and (max-width: 576px) {
+    h1 {
+        font-size: 10vw;
+    }
+
+    
 }
 
 

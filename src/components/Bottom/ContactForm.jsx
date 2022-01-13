@@ -118,7 +118,7 @@ function ContactForm(props) {
   
 
   return (
-    <Card className={classes.newsletter}>
+    <Card id="contact" className={classes.newsletter}>
       <h1 className={classes.heading}>CONTACT</h1>
       <div className={classes.container}>
         <form ref={form} onSubmit={sendEmail} className={classes.box}>

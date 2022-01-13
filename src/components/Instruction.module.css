@@ -13,7 +13,7 @@
 .rightSide {
     display: -webkit-flex;
     display: flex;
-    max-width: 50%;
+    width: 50%;
     justify-content: right;
     flex-direction: column;
     -webkit-flex-direction: column;
@@ -22,12 +22,12 @@
 
 .testimonial {
     border-radius: 50%;
-    max-width: 400px;
+    max-width: 30vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #49484D;
     font-style: italic; 
     position: absolute;
-    right: 750px;
+    right: 57vw;
     line-height: 30px;
 }
 
@@ -41,10 +41,6 @@
 }
 
 .heading {
-    font-family: Futura;
-    font-weight: bold;
-    color: #49484D;
-    font-size: 4.5rem;
     margin-bottom: 0;
 }
 
@@ -59,5 +55,36 @@
 }
 
 .instButton {
-    margin-bottom: 2rem;
+    margin-bottom: 8%;
+}
+
+@media screen and (max-width: 768px) {
+    .rightSide {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .container {
+        width: 90%;
+        margin: auto;
+        justify-content: center;
+    }
+
+    .instructionText {
+        justify-content: center;
+        text-align: center;
+        margin: 5% 5%;
+        font-size: 4vw;
+        line-height: 8vw;
+        
+    }
+
+    .heading {
+        text-align: center;
+    }
+
+    .instButton {
+        display: flex;
+        justify-content: center;
+    }
 }

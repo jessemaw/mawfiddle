@@ -1,6 +1,5 @@
 .content {
-    max-width: 40%;
-    margin-right: 30px;
+    width: 40%;
     margin-bottom: 60px;
     background-color: white;
     border: solid thin #D00D28;
@@ -66,4 +65,24 @@
     top: 16px;
     max-width: 20%;
     border-radius: 50%;
+}
+
+@media screen and (max-width: 768px) {
+    .content {
+        margin: 0 auto 7%;
+        width: 90%;
+        padding: 0;
+    }
+
+    .content:hover {
+        transform: none;
+    }
+
+    .title {
+        font-size: 6vw;
+    }
+
+    .item {
+        text-align: center;
+    }
 }

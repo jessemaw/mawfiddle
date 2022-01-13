@@ -9,11 +9,12 @@ import XenFiddleImg from "../assets/Images/jessemaw-pianosingle-coverart-alt5.jp
 function Music(props) {
 
   return (
-    <Card className={classes.music}>
+    <Card id="music" className={classes.music}>
       <h1 className={classes.heading}>MUSIC</h1>
       <div className={classes.container}>
         <MusicItem
           musicLink="https://youtube.com/playlist?list=PLYVnblqpMUngToq3GrMtyguCWs3yyenRO"
+          className={classes.leftTile}
           topImg={JesseMainImg}
           topTitle="MAW FIDDLE"
           topGenre="PROGRESSIVE FIDDLING"
@@ -32,10 +33,11 @@ function Music(props) {
       <div className={classes.container}>
         <MusicItem
           musicLink="https://wolfpupstringband.bandcamp.com/"
+          className={classes.leftTile}
           topImg={WolfPupImg}
           topTitle="WOLF PUP"
           topGenre="STRING BAND"
-          topDescription="Modern traditional stringband from the Blue Ridge mountains of Southern Virginia"
+          topDescription="Modern traditional stringband playing original tunes from the Blue Ridge mountains of Southern Virginia"
           label="Wolf-Pup-Band"
         />
         <MusicItem

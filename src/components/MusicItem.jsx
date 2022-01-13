@@ -3,7 +3,7 @@ import classes from "./MusicItem.module.css";
 
 function MusicItem(props) {
   return (
-      <a className={classes.content} href={props.musicLink} target="_blank">
+      <a className={`${classes.content} ${props.className}`} href={props.musicLink} target="_blank" rel="noreferrer">
       <img className={classes.img} src={props.topImg} alt={props.label}/>
 
       <div className={classes.item}>

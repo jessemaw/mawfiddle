@@ -1,7 +1,7 @@
 .container {
-  display: flex;
-  justify-content: center;
-  white-space: normal;
+    display: flex;
+    justify-content: center;
+    white-space: normal;
 }
 
 .music {
@@ -14,11 +14,27 @@
 }
 
 .heading {
-  font-family: Futura;
-  font-weight: bold;
-  color: #49484d;
-  font-size: 4.5rem;
   margin: 0 auto;
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.leftTile {
+  margin-right: 3%;
+}
+
+@media screen and (max-width: 768px) {
+
+  .container {
+    width: 100%;
+    display: block;
+    justify-content: center;
+    white-space: normal;
+  }
+
+  .music {
+    width: 90%;
+    margin: 5% auto;
+    padding-bottom: 2%;
+  }
 }

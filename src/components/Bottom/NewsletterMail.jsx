@@ -3,7 +3,7 @@ import Card from "../../UI/Card";
 import classes from "./NewsletterMail.module.css";
 import FiddleLogo from "../../assets/Images/maw-fiddle-logo.png";
 
-function NewsletterMail({ status, message, onValidated }) {
+function NewsletterMail({ status, onValidated }) {
   const [enteredEmail, setEnteredEmail] = useState("");
   const [emailIsValid, setEmailIsValid] = useState();
   const [formIsValid, setFormIsValid] = useState(false);
@@ -37,8 +37,10 @@ function NewsletterMail({ status, message, onValidated }) {
 
     const success = status === "success";
 
+    const error = status === "error";
+
   return (
-    <Card className={classes.newsletter}>
+    <Card id="newsletter" className={classes.newsletter}>
       <h1 className={classes.heading}>NEWSLETTER</h1>
       <div className={classes.container}>
         <div className={classes.box}>
@@ -51,14 +53,16 @@ function NewsletterMail({ status, message, onValidated }) {
           </div>
           <React.Fragment>
             {status === "error" && (
-              <div dangerouslySetInnerHTML={{ __html: message }} />
+              <div>
+                <h2 className={classes.emailText}>Oops! There was an error. Please try again!</h2>
+              </div>
             )}
             {status === "success" && (
               <div>
                 <h2 className={classes.emailText}>Thanks for signing up!</h2>
               </div>
             )}
-            {!success && 
+            {!success && !error && 
             <React.Fragment>
             <h2 className={classes.emailText}>
               Every month, receive an exclusive email with the latest Maw Fiddle
@@ -81,8 +85,8 @@ function NewsletterMail({ status, message, onValidated }) {
               className={classes.signUp}
               disabled={!formIsValid}
             >
-              {!status && "SIGN UP"}
-              {status === "sending" && "SENDING..."}
+              <span>{!status && "SIGN UP"}</span>
+              <span>{status === "sending" && "SENDING..."}</span>
             </button>
             </React.Fragment>}
           </React.Fragment>
